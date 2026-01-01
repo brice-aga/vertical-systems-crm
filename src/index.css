@@ -56,6 +56,10 @@ body {
   .section-gradient-offer {
     @apply bg-gradient-to-r from-purple-400 to-violet-600;
   }
+
+  .section-gradient-content {
+    @apply bg-gradient-to-r from-teal-400 to-cyan-600;
+  }
 }
 
 /* Enhanced animations and effects */

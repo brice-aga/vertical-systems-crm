@@ -12,6 +12,7 @@ export interface Permission {
   team: boolean;
   offer: boolean;
   payment: boolean;
+  content: boolean;
 }
 
 // Hardcoded role permissions as specified
@@ -28,6 +29,7 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission> = {
     team: false,
     offer: false,
     payment: false,
+    content: true,
   },
   Finance: {
     dashboard: true,
@@ -41,6 +43,7 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission> = {
     team: true,
     offer: false,
     payment: false,
+    content: true,
   },
   Admin: {
     dashboard: true,
@@ -54,6 +57,7 @@ export const ROLE_PERMISSIONS: Record<UserRole, Permission> = {
     team: true,
     offer: true,
     payment: true,
+    content: true,
   },
 };
 

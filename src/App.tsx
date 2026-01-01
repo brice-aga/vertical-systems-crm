@@ -23,6 +23,9 @@ import CashOut from './pages/Finances/CashOut';
 import Receivables from './pages/Finances/Receivables';
 import FinancialDashboard from './pages/Finances/FinancialDashboard';
 import PlaceholderPage from './pages/placeholder/PlaceholderPage';
+import ContentLibrary from './pages/Content/ContentLibrary';
+import ContentCalendar from './pages/Content/ContentCalendar';
+import ContentIdeas from './pages/Content/ContentIdeas';
 
 const AppContent: React.FC = () => {
   const { user, loading } = useAuth();
@@ -221,19 +224,24 @@ const AppContent: React.FC = () => {
 
                 {/* Payment Routes */}
                 <Route path="/payment/processing" element={
-                  <PlaceholderPage 
-                    title="Payment Processing" 
+                  <PlaceholderPage
+                    title="Payment Processing"
                     subtitle="Process and manage payments."
                     gradientClass="section-gradient-finances"
                   />
                 } />
                 <Route path="/payment/history" element={
-                  <PlaceholderPage 
-                    title="Payment History" 
+                  <PlaceholderPage
+                    title="Payment History"
                     subtitle="View payment transaction history."
                     gradientClass="section-gradient-finances"
                   />
                 } />
+
+                {/* Content Routes */}
+                <Route path="/content/library" element={<ContentLibrary />} />
+                <Route path="/content/calendar" element={<ContentCalendar />} />
+                <Route path="/content/ideas" element={<ContentIdeas />} />
               </Routes>
             </main>
           </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { 
-  Home, Users, TrendingUp, FileText, DollarSign, UserPlus, 
+import {
+  Home, Users, TrendingUp, FileText, DollarSign, UserPlus,
   Package, Bot, MessageSquare, Gift, ChevronDown, ChevronRight,
-  CreditCard, Settings
+  CreditCard, Settings, Layers
 } from 'lucide-react';
 import { useApp } from '../../contexts/AppContext';
 import { useAuth } from '../../contexts/AuthContext';
@@ -91,6 +91,18 @@ const menuItems: MenuItem[] = [
     children: [
       { label: 'One Click Onboarding', path: '/onboarding/one-click' },
       { label: 'Employee Onboarding', path: '/onboarding/employee' }
+    ]
+  },
+  {
+    id: 'content',
+    label: 'Content',
+    icon: Layers,
+    gradient: 'section-gradient-content',
+    section: 'content',
+    children: [
+      { label: 'Content Library', path: '/content/library' },
+      { label: 'Content Calendar', path: '/content/calendar' },
+      { label: 'Content Ideas', path: '/content/ideas' }
     ]
   }
 ];
