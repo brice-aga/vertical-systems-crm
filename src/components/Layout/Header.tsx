@@ -1,5 +1,5 @@
 import React from 'react';
-import { Infinity, LogOut, User } from 'lucide-react';
+import { LogOut, User } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
 const Header: React.FC = () => {
@@ -10,13 +10,14 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="h-16 bg-gray-900/50 backdrop-blur-sm border-b border-gray-800/50 flex items-center justify-between px-6">
+    <header className="h-16 bg-charcoal-800/90 backdrop-blur-sm border-b border-charcoal-700/50 flex items-center justify-between px-6">
       <div className="flex items-center space-x-3">
-        <div className="relative">
-          <Infinity className="h-8 w-8 text-transparent bg-gradient-to-r from-red-400 to-rose-600 bg-clip-text animate-spin-slow" />
-          <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-rose-600 rounded-full blur opacity-30 animate-pulse-glow"></div>
-        </div>
-        <h1 className="text-2xl font-bold gradient-text bg-gradient-to-r from-red-400 to-rose-600">
+        <img
+          src="/ab_logo.png"
+          alt="Agamemnon"
+          className="h-10 w-10 object-contain"
+        />
+        <h1 className="text-2xl font-bold gradient-text bg-gradient-to-r from-gold-300 to-gold-500">
           Vertical Systems
         </h1>
       </div>
